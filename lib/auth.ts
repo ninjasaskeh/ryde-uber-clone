@@ -44,7 +44,7 @@ export const googleOAuth = async (startOAuthFlow: any) => {
             method: "POST",
             body: JSON.stringify({
               name: `${signUp.fieldName} ${signUp.lastName}`,
-              email: signUp.email,
+              email: signUp.emailAddress,
               clerkId: signUp.createdUserId,
             }),
           });

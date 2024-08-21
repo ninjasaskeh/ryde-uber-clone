@@ -1,5 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 
+// di expo kalo buat nyambungin api nama filenya(routenya) pake +api.ts/js
 export async function POST(request: Request) {
   try {
     const sql = neon(`${process.env.DATABASE_URL}`);
@@ -16,7 +17,7 @@ export async function POST(request: Request) {
       INSERT INTO users (
         name,
         email,
-        clerk_id
+        clerk_id  
       )
       VALUES (
                ${name},
